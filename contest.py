@@ -6,7 +6,9 @@ val = ['a','b','c','d','e','f']
 
 path = 'C:\\Users\\Ranjit\\Desktop\\cpp\\'
 
-name = '_'.join(sys.argv[1:])
+path += ''.join(sys.argv[1:2])
+path += '\\'
+name = '_'.join(sys.argv[2:])
 
 path += name
 
@@ -20,3 +22,4 @@ for i in val:
     des += i
     des += '.cpp'
     copy(src,des)
+
